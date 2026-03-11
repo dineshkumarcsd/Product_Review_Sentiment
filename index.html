@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Product Review Sentiment Analyzer</title>
+
+<style>
+
+body{
+font-family: Arial;
+background: linear-gradient(135deg,#667eea,#764ba2);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+margin:0;
+}
+
+.container{
+background:white;
+padding:40px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+width:420px;
+text-align:center;
+}
+
+h2{
+margin-bottom:20px;
+color:#333;
+}
+
+textarea{
+width:100%;
+height:120px;
+padding:10px;
+border-radius:6px;
+border:1px solid #ccc;
+font-size:14px;
+resize:none;
+}
+
+button{
+margin-top:20px;
+padding:12px;
+width:100%;
+border:none;
+background:#667eea;
+color:white;
+font-size:16px;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#5a67d8;
+}
+
+.footer{
+margin-top:15px;
+font-size:12px;
+color:#777;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>🛍 Product Review Sentiment Analyzer</h2>
+
+<form action="/predict" method="post">
+
+<textarea name="review" placeholder="Enter product review here..." required></textarea>
+
+<button type="submit">Analyze Sentiment</button>
+
+</form>
+
+<div class="footer">
+AI Powered Sentiment Detection
+</div>
+
+</div>
+
+</body>
+</html>
